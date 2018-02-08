@@ -24,6 +24,7 @@ function BillingCycleController($scope, $http, $location, msgs, tabs, consts) {
     })
   }
 
+
   $scope.createBillingCycle = function() {
     const url = `${consts.apiUrl}/billingCycles`;
     $http.post(url, $scope.billingCycle).then(function(response) {
